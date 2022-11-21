@@ -1,0 +1,93 @@
+/*Se está lendo isso vc se interessou pelo código fonte, me contrate para sua empresa, garanto que não irei decepcionar.
+Este site foi criado e desenvolvido por Davi Costa Barroso*/
+.menu{
+	width: 100%;
+	height: 42px;
+	/*verde fraco*/
+	background-color: #00a86b;
+	font-family: "arial";
+}
+.menu ul{
+	list-style: none;
+	position: relative;
+}
+.menu ul li{
+	width: auto;
+	float: left;
+	/*cinza*/
+	border-bottom: solid 1px #f0f0f5;
+}
+.menu ul li a{
+font-weight: bold;
+}
+.menu a{
+	padding: 12px;
+	display: block;
+	text-align: center;
+	background-color:#00a86b;
+}
+.menu ul ul{
+	position: absolute;
+	visibility: hidden;
+}
+.menu ul li:hover ul{
+	width: 210px;
+	visibility: visible;
+}
+.menu a:hover{
+	color: white;
+}
+.menu ul ul li{
+	float: none;
+}
+.menu ul ul li a{
+	background-color: lightblue;
+}
+label[for="botao_menu"]{
+	background-color: #01888b;
+	color: white;
+	text-align: center;
+	font-size: 35px;
+	cursor: pointer;
+	height: 50px;
+}
+#botao_menu{
+	display: none;
+}
+label[for="botao_menu"]{
+	display: none;
+}
+@media(max-width: 800px){
+	#botao_menu:checked ~ .menu{
+		margin-left: 0;
+	}
+	.menu{
+		width: 95%;
+		position: absolute;
+		margin-left: -120%;
+		transition: all .4s;
+	}
+	.menu a{
+		font-size: 20px;
+		padding: 5px;
+	}
+	.menu ul li{
+		width: 100%;
+		float: none;
+	}
+	.menu ul ul{
+		position: static;
+		overflow: hidden;
+		max-height: 0;
+		transition: all .4s;
+	}
+	.menu ul li:hover ul{
+		height: auto;
+		width: auto;
+		max-height: 200px;
+	}
+	label[for="botao_menu"]{
+	display: block;
+}
+
+}

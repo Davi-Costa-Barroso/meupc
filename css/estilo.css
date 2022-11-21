@@ -1,0 +1,110 @@
+/*Se está lendo isso vc se interessou pelo código fonte, me contrate para sua empresa, garanto que não irei decepcionar.
+Este site foi criado e desenvolvido por Davi Costa Barroso*/
+*{margin: 0px; padding: 0px;}
+/*cor azul: #01888b;*/
+body{
+	/* fundo cinza claro */
+	background: #f0f0f5;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+p{
+	line-height:1.4;
+	margin-bottom: 10px;
+	font-size: 17px;
+	text-align: justify;
+}
+#conteudo{
+	width: 95%;
+	height: 100%;
+	max-width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#conteudo header{
+	/* fundo verde */
+	background:#01888b;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#conteudo header h1{
+	font-size: 52px;
+	color: white;
+}
+#conteudo header img{
+	margin-right: 16px;
+}
+main{
+	width: 100%;
+	font-family: "arial";
+}
+.coluna1{
+	float: left;
+	width: 65%;
+}
+.coluna2{
+	float: right;
+    width: 30%;
+}
+#nivel2{
+	color: black; 
+	font-weight: bold;
+	width: 150px; 
+	height: 40px; 
+	border: 0px;
+	background-color: orange;
+}
+#nivel3{
+	color: white;
+	font-weight: bold;
+	width: 150px; 
+	height: 40px; 
+	border: 0px;
+	background-color: blue;
+}
+#nivel4{
+	color: white;
+	font-weight: bold;
+	width: 150px; 
+	height: 40px; 
+	border: 0px;
+	background-color: red;
+}
+.coluna1 form button{
+	padding: 5px;
+	font-size: 17px;
+	font-weight: bold;
+}
+.coluna1 a{
+	color: blue;
+}
+.coluna2 a{
+	color: #01888b;
+}
+.comandossites{
+	background-color: yellow;
+	font-size: 14px;
+}
+footer{
+	width: 100%;
+	text-align: center;
+	clear: both;
+}
+@media(max-width: 800px){
+	.coluna1{
+		float: none;
+		width: 100%;
+	}
+	.coluna2{
+		float: none;
+		width: 100%;
+	}
+	.coluna1 img{
+		width: 100%;
+	}
+}
