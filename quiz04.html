@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Quiz</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="shortcut icon" href="img\pc.png" alt="logo">
+	<!-- Se está lendo isso vc se interessou pelo código fonte, me contrate para sua empresa, garanto que não irei decepcionar.
+Este site foi criado e desenvolvido por Davi Costa Barroso-->
+</head>
+<body>
+<div id="conteudo">
+		<header>
+			<img src="img\pc.png" alt="computador" height="60px" width="60px">
+			<h1>Meu PC</h1>
+		</header>
+		<input type="checkbox" id="botao_menu">
+		<label for="botao_menu">&#9776;</label>
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a>Software</a>
+					<ul>
+						<li><a href="software.html">O que é?</a></li>
+						<li><a href="sistemasoperacionais.html">Sistemas Operacionais</a></li>
+						<li><a href="viruseantivirus.html">Vírus e Antivírus</a></li>
+						<li><a href="utilitarios.html">Programas Auxiliares</a></li>
+					</ul>
+				</li>
+				<li><a>Hardware</a>
+					<ul>
+						<li><a href="componenteshardware.html">Componentes de um PC</a></li>
+						<li><a href="ferramentas.html">Ferramentas para Manutenção</a></li>
+					</ul>
+				</li>
+				<li><a>Internet</a>
+					<ul>
+						<li><a href="tcpip.html">Modelo TCP/IP</a></li>
+						<li><a href="osi.html">Modelo OSI</a></li>
+						<li><a href="outrosconceitos.html">DNS e outros conceitos</a></li>
+					</ul>
+				</li>
+				<li><a>Linguagens de programação</a>
+					<ul>
+						<li><a href="python.html">Python</a></li>
+						<li><a href="sitejava.html">Java</a></li>
+						<li><a href="c.html">C</a></li>
+					</ul>
+				</li>
+				<li><a href="sites.html">Criação de Sites</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+				<li><a href="dicas.html">Dicas</a></li>
+				<li><a href="contato.html">Sobre</a></li>
+			</ul>
+		</nav>
+	<main><br/>
+		<div class="coluna1">
+<p>Você está no <font color="red">nível 4</font>, este é o ultimo nível. Parabéns por chegar até aqui.</p>
+<form name="quiz">
+     <h3>1. É possível criar sites apenas com linguagens de programação?</h3><br/>
+        <p><input  type="radio" name="q1" value="a">Sim</p>
+        <p><input  type="radio" name="q1" value="b">Não</p>
+    <h3>2. O modelo TCP/IP possui quantas camadas?</h3><br/>
+        <p><input  type="radio" name="q2" value="a">4</p>
+        <p><input  type="radio" name="q2" value="b">5</p>
+        <p><input type="radio" name="q2" value="c">7</p>
+        <p><input type="radio" name="q2" value="d">10</p>
+     <h3>3. Qual a função da pasta térmica?</h3><br/>
+        <p><input  type="radio" name="q3" value="a">Acelerar o computador</p>
+        <p><input  type="radio" name="q3" value="b">Prevenir contra vírus</p>
+        <p><input type="radio" name="q3" value="c">Ajudar na dissipação de calor</p>
+        <p><input type="radio" name="q3" value="d">Colar peças</p>
+     <h3>4. Wireless network watcher é responsável por...</h3><br/>
+        <p><input  type="radio" name="q4" value="a">Hackear sistemas</p>
+        <p><input  type="radio" name="q4" value="b">Remover ameaças do sistema</p>
+        <p><input  type="radio" name="q4" value="c">Bloquear endereços IP</p>
+        <p><input  type="radio" name="q4" value="d">Mostrar todos que estão conectados no wifi</p>
+    <p><button type="button" onclick="corrigir()">Corrigir</button></p>
+</form>
+<P id="r1"></P>
+<P id="r2"></P>
+<P id="r3"></P>
+<P id="r4"></P>
+<p id="seguir"></p>
+		</div>
+		<div class="coluna2">                     
+		</div>
+	</main>
+	<footer>
+		<small>Site sem fins lucrativos.</small>
+	</footer>
+</div>
+</body>
+<script src="js/js4.js"></script>
+</html>

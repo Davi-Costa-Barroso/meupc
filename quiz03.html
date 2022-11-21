@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Quiz</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="shortcut icon" href="img\pc.png" alt="logo">
+	<!-- Se está lendo isso vc se interessou pelo código fonte, me contrate para sua empresa, garanto que não irei decepcionar.
+Este site foi criado e desenvolvido por Davi Costa Barroso-->
+</head>
+<body>
+<div id="conteudo">
+		<header>
+			<img src="img\pc.png" alt="computador" height="60px" width="60px">
+			<h1>Meu PC</h1>
+		</header>
+		<input type="checkbox" id="botao_menu">
+		<label for="botao_menu">&#9776;</label>
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a>Software</a>
+					<ul>
+						<li><a href="software.html">O que é?</a></li>
+						<li><a href="sistemasoperacionais.html">Sistemas Operacionais</a></li>
+						<li><a href="viruseantivirus.html">Vírus e Antivírus</a></li>
+						<li><a href="utilitarios.html">Programas Auxiliares</a></li>
+					</ul>
+				</li>
+				<li><a>Hardware</a>
+					<ul>
+						<li><a href="componenteshardware.html">Componentes de um PC</a></li>
+						<li><a href="ferramentas.html">Ferramentas para Manutenção</a></li>
+					</ul>
+				</li>
+				<li><a>Internet</a>
+					<ul>
+						<li><a href="tcpip.html">Modelo TCP/IP</a></li>
+						<li><a href="osi.html">Modelo OSI</a></li>
+						<li><a href="outrosconceitos.html">DNS e outros conceitos</a></li>
+					</ul>
+				</li>
+				<li><a>Linguagens de programação</a>
+					<ul>
+						<li><a href="python.html">Python</a></li>
+						<li><a href="sitejava.html">Java</a></li>						<li><a href="c.html">C</a></li>
+					</ul>
+				</li>
+				<li><a href="sites.html">Criação de Sites</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+				<li><a href="dicas.html">Dicas</a></li>
+				<li><a href="contato.html">Sobre</a></li>
+			</ul>
+		</nav>
+	<main><br/>
+		<div class="coluna1">
+<p>Você está no <font color="blue">nível 3</font>, após concluir este desafio poderá ir para o ultimo nível.</p>
+<form name="quiz">
+     <h3>1. Este serviço é responsável por fornecer dinamicamente endereços IP na rede</h3><br/>
+        <p><input  type="radio" name="q1" value="a">DNS</p>
+        <p><input  type="radio" name="q1" value="b">TCP/IP</p>
+        <p><input type="radio" name="q1" value="c">DHCP</p>
+        <p><input type="radio" name="q1" value="d">Mac</p>
+    <h3>2. O DNS é responsavel por...</h3><br/>
+        <p><input  type="radio" name="q2" value="a">Cuidar da formatação dos dados</p>
+        <p><input  type="radio" name="q2" value="b">Criar sites responsivos</p>
+        <p><input type="radio" name="q2" value="c">Localizar um dispositivo no roteador em que está conectado</p>
+        <p><input type="radio" name="q2" value="d">Localizar e traduzir para números IP os endereços dos sites que digitamos nos navegadores</p>
+     <h3>3. O que é SSD?</h3><br/>
+        <p><input  type="radio" name="q3" value="a">A evolução de um HD</p>
+        <p><input  type="radio" name="q3" value="b">Uma unidade de armazenamento antiga</p>
+        <p><input type="radio" name="q3" value="c">É uma unidade logica</p>
+        <p><input type="radio" name="q3" value="d">Um hardware capaz de armazenar energia</p>
+     <h3>4. O Linux é um...</h3><br/>
+        <p><input  type="radio" name="q4" value="a">Sistema operacional</p>
+        <p><input  type="radio" name="q4" value="b">Malware</p>
+        <p><input  type="radio" name="q4" value="c">Hardware</p>
+        <p><input  type="radio" name="q4" value="d">Computador</p>
+      <h3>5. Qual dessas opções é uma linguagem de programação?</h3><br/>
+        <p><input  type="radio" name="q5" value="a">HTML</p>
+        <p><input  type="radio" name="q5" value="b">COD</p>
+        <p><input type="radio" name="q5" value="c">C</p>
+        <p><input type="radio" name="q5" value="d">CSS</p>
+    <p><button type="button" onclick="corrigir()">Corrigir</button></p>
+</form>
+<P id="r1"></P>
+<P id="r2"></P>
+<P id="r3"></P>
+<P id="r4"></P>
+<P id="r5"></P>
+<p id="seguir"></p>
+		</div>
+		<div class="coluna2">                     
+		</div>
+	</main>
+	<footer>
+		<small>Site sem fins lucrativos.</small>
+	</footer>
+</div>
+</body>
+<script src="js/js3.js"></script>
+</html>

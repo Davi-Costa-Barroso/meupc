@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Criação de sites</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="shortcut icon" href="img\pc.png" alt="logo">
+<!-- Se está lendo isso vc se interessou pelo código fonte, me contrate para sua empresa, garanto que não irei decepcionar.
+Este site foi criado e desenvolvido por Davi Costa Barroso-->
+</head>
+<body>
+<div id="conteudo">
+		<header>
+			<img src="img\pc.png" alt="computador" height="60px" width="60px">
+			<h1>Meu PC</h1>
+		</header>
+		<input type="checkbox" id="botao_menu">
+		<label for="botao_menu">&#9776;</label>
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a>Software</a>
+					<ul>
+						<li><a href="software.html">O que é?</a></li>
+						<li><a href="sistemasoperacionais.html">Sistemas Operacionais</a></li>
+						<li><a href="viruseantivirus.html">Vírus e Antivírus</a></li>
+						<li><a href="utilitarios.html">Programas Auxiliares</a></li>
+					</ul>
+				</li>
+				<li><a>Hardware</a>
+					<ul>
+						<li><a href="componenteshardware.html">Componentes de um PC</a></li>
+						<li><a href="ferramentas.html">Ferramentas para Manutenção</a></li>
+					</ul>
+				</li>
+				<li><a>Internet</a>
+					<ul>
+						<li><a href="tcpip.html">Modelo TCP/IP</a></li>
+						<li><a href="osi.html">Modelo OSI</a></li>
+						<li><a href="outrosconceitos.html">DNS e outros conceitos</a></li>
+					</ul>
+				</li>
+				<li><a>Linguagens de programação</a>
+					<ul>
+						<li><a href="python.html">Python</a></li>
+						<li><a href="sitejava.html">Java</a></li>
+						<li><a href="c.html">C</a></li>
+					</ul>
+				</li>
+				<li><a href="sites.html">Criação de Sites</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+				<li><a href="dicas.html">Dicas</a></li>
+				<li><a href="contato.html">Sobre</a></li>
+			</ul>
+		</nav>
+	<main><br/>
+		<div class="coluna1">
+				<h2>Criação de sites</h2>
+				<p>&nbsp;Todos os sites são criados pelas linguagens HTML, CSS e JavaScript, mas não se engane, HTML é uma linguagem de Hyper Texto e não de programação. Este site mostrará o básico do básico sobre criação de sites.</p>
+				<p>Você também pode criar sites em plataformas onlines sem precisar digitar uma única linha de código, mas isso pode te deixar limitado com o que as plataformas podem oferecer.</p>
+				<h3>HTML</h3>
+				<p>&nbsp;É ela quem constrói o esqueleto de uma página web. Para começar, entre no bloco de notas ou algum editor de texto (Recomendo Sublime Text, pode ser encontrado na página de utilitarios).</p>
+				<p>Digite o mesmo que a imagem abaixo:</p>
+				<center><img src="img/html.png" width="400px" height="280px"></center>
+				<p>Salve como index.html</p>	
+				<p>Localize seu arquivo e de dois cliques para abri-lo. Se seguir os passos aparecerá o seguinte:</p>
+				<center><img src="img/oimundo.png" width="400px" height="280px"></center>
+				<p>Pronto, você criou sua primeira página.</p>
+				<p>&nbsp;Você já deve ter notado que todo comando tem o sinal de menor que "<b> < </b>" e maior que "<b> > </b>", sendo que o comando deve ser escrito duas vezes e todo conteúdo deverá ficar entre ele, nota-se que o comando de finalização tem "<b> / </b>" após o sinal de <b>menor que <</b>, veja na primeira imagem.</p>
+				<h3>Comandos básicos</h3>	
+<div class="comandossites">
+<xmp><title>O titulo da página</title>
+<h1>Titulo do texto grande</h1>
+<h2>Titulo do texto um pouco menor</h2>
+<h3>Titulo do texto menor ainda</h3>
+<p>Texto aqui, esse é um parágrafo</p>
+</xmp></div>
+				<p>&nbsp;Coloque os comandos básicos mostrados na imagem dentro do comando < html > < / html >, pratique, modifique e pesquise mais comandos em diferentes sites.</p>
+				<h3>CSS</h3>
+				<p>&nbsp;A linguagem de estilo de cascata CSS é utilizada para da estilo para o HTML, enquanto ele é o esqueleto, o CSS é a pele.</p>
+				<p>&nbsp;Vamos da uma cor para a simples página html mostrada anteriormente, abra um editor de texto e digite:</p>
+				<div class="comandossites">
+				html {<br/>
+				background-color: yellow;<br/>
+				}
+				</div>
+				<p>Salve como estilo.css</p>
+				<p>Calma que nada mudará ainda, é necessário linkar o CSS no código HTML, para isso, coloque o código abaixo dentro do comando html do seu documento html.</p>
+				<center><img src="img/linkarcss.png"></center>
+				<p>Feito isso, de cliques duplos no seu documento html para abri-lo no navegador. </p>
+				<center><img src="img/comandopagina.png"></center>
+				<p>Se tiver seguido conforme o tutorial a sua tela ficará assim:</p>
+				<center><img src="img/htmlecss.png"></center>
+				<p>&nbsp;Observa-se que o código CSS é diferente do código HTML. No CSS, os comandos não precisam de sinais de maior que e menor que, mas precisam dos sinais de chaves <b>{   }</b> para abrir e fechar uma instrução que deve ser seguida.</p>
+				<p>Os comandos são em inglês, como por exemplo background-color, que significa a cor de fundo, você também pode colocar outras instruções entre as chaves para personalizar sua página web. Tente colocar <b>text-align: center;</b> este comando vai alinhar o texto no centro da página. </p>
+				<h3>JavaScript</h3>
+				<p>&nbsp;A função do javascript é torna o site mais dinâmico, essa é uma linguagem de programação diferente das outras citadas anteriormente.</p>
+				<p>&nbsp;Você pode criar um documento separado do JavaScript, mas nesse tutorial não iremos fazer isso. Podemos fazer algo mais simples que é programar em JavaScript dentro do seu código HTML.</p>
+				<p>Coloque o código abaixo dentro do seu arquivo html e verá a mágica.</p>
+<div class="comandossites">
+<xmp><script type="text/javascript">
+	alert("Oi mundo");
+</script>	
+</xmp>
+</div>
+<p>Se tiver feito conforme o tutorial, vai aparecer um alerta ao atualizar a página.</p>
+<p>Para mais conteúdo no site comente nos comentarios da página <a href="contato.html">sobre</a>.</p>
+		</div>
+		<div class="coluna2">
+			
+		</div>
+	</main>
+	<footer>
+		<small>
+Site sem fins lucrativos.
+	</small>
+	</footer>
+</div>
+</body>
+</html>

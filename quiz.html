@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Quiz</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="shortcut icon" href="img\pc.png" alt="logo">
+	<!-- Se está lendo isso vc se interessou pelo código fonte, me contrate para sua empresa, garanto que não irei decepcionar.
+Este site foi criado e desenvolvido por Davi Costa Barroso-->
+</head>
+<body>
+<div id="conteudo">
+		<header>
+			<img src="img\pc.png" alt="computador" height="60px" width="60px">
+			<h1>Meu PC</h1>
+		</header>
+		<input type="checkbox" id="botao_menu">
+		<label for="botao_menu">&#9776;</label>
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a>Software</a>
+					<ul>
+						<li><a href="software.html">O que é?</a></li>
+						<li><a href="sistemasoperacionais.html">Sistemas Operacionais</a></li>
+						<li><a href="viruseantivirus.html">Vírus e Antivírus</a></li>
+						<li><a href="utilitarios.html">Programas Auxiliares</a></li>
+					</ul>
+				</li>
+				<li><a>Hardware</a>
+					<ul>
+						<li><a href="componenteshardware.html">Componentes de um PC</a></li>
+						<li><a href="ferramentas.html">Ferramentas para Manutenção</a></li>
+					</ul>
+				</li>
+				<li><a>Internet</a>
+					<ul>
+						<li><a href="tcpip.html">Modelo TCP/IP</a></li>
+						<li><a href="osi.html">Modelo OSI</a></li>
+						<li><a href="outrosconceitos.html">DNS e outros conceitos</a></li>
+					</ul>
+				</li>
+				<li><a>Linguagens de programação</a>
+					<ul>
+						<li><a href="python.html">Python</a></li>
+						<li><a href="sitejava.html">Java</a></li>
+						<li><a href="c.html">C</a></li>
+					</ul>
+				</li>
+				<li><a href="sites.html">Criação de Sites</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+				<li><a href="dicas.html">Dicas</a></li>
+				<li><a href="contato.html">Sobre</a></li>
+			</ul>
+		</nav>
+	<main><br/>
+		<div class="coluna1">
+<p>Teste seus conhecimentos concluindo 4 níveis com 5 perguntas cada. Você está no <font color="green">nível 1</font>, após concluir este desafio poderá ir para o <font color="orange">nivel 2</font>.</p>
+<form name="quiz">
+    <h3>1. Quem é considerado o pai da informática?</h3><br/>
+        <p><input  type="radio" name="q1" value="a">Bill Gates</p>
+        <p><input  type="radio" name="q1" value="b">Steve jobs</p>
+        <p><input type="radio" name="q1" value="c">Alan Turing</p>
+        <p><input type="radio" name="q1" value="d">Linus Torvalds</p>
+    <h3>2. O que é software?</h3><br/>
+       	<p><input  type="radio" name="q2" value="a">É um componente do gabinete</p>
+        <p><input  type="radio" name="q2" value="b">É a parte lógica do computador</p>
+        <p><input type="radio" name="q2" value="c">É onde fica armazenado programas</p>
+        <p><input type="radio" name="q2" value="d">Apenas o sistema operacional</p>
+     <h3>3. O que é Hardware?</h3><br/>
+        <p><input  type="radio" name="q3" value="a">Um tipo de software</p>
+        <p><input  type="radio" name="q3" value="b">Toda parte fisica do computador</p>
+        <p><input type="radio" name="q3" value="c">Programas instalados</p>
+        <p><input type="radio" name="q3" value="d">Memória ram</p>
+    <h3>4. O que é CPU?</h3><br/>
+        <p><input  type="radio" name="q4" value="a">Computador</p>
+        <p><input  type="radio" name="q4" value="b">Gabinete</p>
+        <p><input type="radio" name="q4" value="c">Processador</p>
+        <p><input type="radio" name="q4" value="d">Sistema Operacional</p>
+      <h3>5. O que são programas utilitarios?</h3><br/>
+        <p><input  type="radio" name="q5" value="a">Programas que auxiliam em diversas tarefas</p>
+        <p><input  type="radio" name="q5" value="b">Um programa malicioso</p>
+        <p><input type="radio" name="q5" value="c">Jogos de computadores</p>
+        <p><input type="radio" name="q5" value="d">Todas as alternativas</p>
+    <p><button type="button" onclick="corrigir()">Corrigir</button></p>
+</form>
+<p id="r1"></p>
+<p id="r2"></p>
+<p id="r3"></p>
+<p id="r4"></p>
+<p id="r5"></p>
+<p id="r6"></p>
+<p id="seguir"></p>
+		</div>
+		<div class="coluna2">                     
+		</div>
+	</main>
+	<footer>
+		<small>Site sem fins lucrativos.</small>
+	</footer>
+</div>
+</body>
+<script src="js/js.js"></script>
+</html>

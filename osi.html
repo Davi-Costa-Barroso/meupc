@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Protocolo OSI</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="shortcut icon" href="img\pc.png" alt="logo">
+	<!-- Se está lendo isso vc se interessou pelo código fonte, me contrate para sua empresa, garanto que não irei decepcionar.
+Este site foi criado e desenvolvido por Davi Costa Barroso-->
+</head>
+<body>
+<div id="conteudo">
+		<header>
+			<img src="img\pc.png" alt="computador" height="60px" width="60px">
+			<h1>Meu PC</h1>
+		</header>
+		<input type="checkbox" id="botao_menu">
+		<label for="botao_menu">&#9776;</label>
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a>Software</a>
+					<ul>
+						<li><a href="software.html">O que é?</a></li>
+						<li><a href="sistemasoperacionais.html">Sistemas Operacionais</a></li>
+						<li><a href="viruseantivirus.html">Vírus e Antivírus</a></li>
+						<li><a href="utilitarios.html">Programas Auxiliares</a></li>
+					</ul>
+				</li>
+				<li><a>Hardware</a>
+					<ul>
+						<li><a href="componenteshardware.html">Componentes de um PC</a></li>
+						<li><a href="ferramentas.html">Ferramentas para Manutenção</a></li>
+					</ul>
+				</li>
+				<li><a>Internet</a>
+					<ul>
+						<li><a href="tcpip.html">Modelo TCP/IP</a></li>
+						<li><a href="osi.html">Modelo OSI</a></li>
+						<li><a href="outrosconceitos.html">DNS e outros conceitos</a></li>
+					</ul>
+				</li>
+				<li><a>Linguagens de programação</a>
+					<ul>
+						<li><a href="python.html">Python</a></li>
+						<li><a href="sitejava.html">Java</a></li>
+						<li><a href="c.html">C</a></li>
+					</ul>
+				</li>
+				<li><a href="sites.html">Criação de Sites</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+				<li><a href="dicas.html">Dicas</a></li>
+				<li><a href="contato.html">Sobre</a></li>
+			</ul>
+		</nav>
+	<main><br/>
+		<div class="coluna1">
+				<h2>Modelo OSI</h2>
+				<p>&nbsp;É composto por 7 camadas, sendo que cada uma delas realizam determinadas funções. As camadas são: Aplicação, Apresentação, Sessão, Transporte, Rede, Dados e Física.</p>
+				<h2>Como funciona?</h2>
+				<p><font color="blue">Camada Física:</font> Descreve as interfaces eléctricas/ópticas, mecânicas e funcionais com o meio físico e transporta os sinais para todas as camadas superiores. Cabos Ethernet e de fibra óptica operam nesta camada.
+				<p><font color="blue">Camada Enlace:</font> Esta camada proporciona uma transferência de quadros de dados sem erros de um nó para outro através da camada física, permitindo que as camadas acima dela assumam a transmissão praticamente sem erros através do vínculo. A camada de enlace já entende um endereço, o endereço físico (MAC).
+				<p><font color="blue">Camada de rede:</font> A camada de rede controla a operação da sub-rede, decidindo que caminho físico os dados devem seguir com base nas condições da rede, na prioridade do serviço e em outros fatores. É o lugar onde a parte "IP" de "TCP/IP" acontece.
+				<p><font color="blue">Camada de Transporte:</font> Esta camada garante que as mensagens sejam entregues sem erros, em sequência e sem perdas ou duplicações. Ela elimina para os protocolos de camadas superiores qualquer preocupação a respeito de transferência de dados entre eles seus pares. 
+				<p><font color="blue">Camada de Sessão:</font> É responsável por iniciar, gerenciar e terminar a conexão entre hosts. Para obter êxito no processo de comunicação, a camada de sessão tem que se preocupar com a sincronização entre hosts, para que a sessão aberta entre eles se mantenha funcionando.
+				<p><font color="blue">Camada de Apresentação:</font> Atua como intermediaria no processo a frente. Ela cuida da formatação dos dados, e da representação, ela é a camada responsável por fazer com que duas redes diferentes (por exemplo, uma TCP/IP e outra IPX/SPX) se comuniquem, "traduzindo" os dados no processo de comunicação. 
+				<p><font color="blue">Camada de Aplicação:</font> A camada de aplicação e a que mais notamos no dia a dia, pois interagimos direto com ela através de softwares. Essa camada contém uma variedade de funções normalmente necessárias. É aqui que encontramos, HTTP, FTP, SMTP e tantos outros.
+		</div>
+		<div class="coluna2">
+			<img src="https://imagens.canaltech.com.br/66548.97680-Camadas-do-Modelo-OSI-02.jpg" width="250px" height="230px">
+		</div>
+	</main>
+	<footer>
+		<small>
+fonte: <br/>
+fontes: https://canaltech.com.br/produtos/o-que-e-modelo-osi/<br/>
+Site sem fins lucrativos.
+	</small>
+	</footer>
+</div>
+</body>
+</html>
